@@ -1,5 +1,14 @@
 .swiper {
   margin-top: 56px;
+  padding-bottom: 40px !important;
+}
+
+.swiper-container {
+  overflow: visible;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: -25px;
 }
 
 .swiper_slide_1,

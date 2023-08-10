@@ -14,10 +14,10 @@ export default function Banner() {
         spaceBetween={30}
         loop={true}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -103,6 +103,7 @@ export default function Banner() {
             </p>
           </div>
         </SwiperSlide>
+        <div className="swiper-pagination"></div>
       </Swiper>
     </>
   );
