@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
 import style from "./Banner.module.css";
-import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -12,12 +11,11 @@ export default function Banner() {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        loop={true}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
