@@ -3,7 +3,7 @@
 }
 .card_container {
   gap: 55px;
-  margin-top: 90px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
