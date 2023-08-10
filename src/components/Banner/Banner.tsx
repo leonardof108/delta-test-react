@@ -14,22 +14,15 @@ export default function Banner() {
         spaceBetween={30}
         loop={true}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
         className={`mySwiper ${style.swiper}`}
-        style={{
-          "--swiper-pagination-color": "#FFB300",
-          "--swiper-pagination-bullet-inactive-color": "#DEDEDE",
-          "--swiper-pagination-bullet-inactive-opacity": "0.7",
-          "--swiper-pagination-bullet-size": "10px",
-          "--swiper-pagination-bullet-horizontal-gap": "6px",
-        }}
       >
         <SwiperSlide className={style.swiper_slide_1}>
           <div

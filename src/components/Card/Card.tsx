@@ -10,7 +10,6 @@ interface infoProps {
 }
 
 export default function Card({ info }) {
-  console.log(info);
   return (
     <div key={info.name} className={style.card_container}>
       <Image
