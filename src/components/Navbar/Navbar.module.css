@@ -1,0 +1,161 @@
+.navbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_container_left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.navbar_logo {
+  height: 56px;
+  width: 169px;
+}
+
+.navbar_menu {
+  display: flex;
+  gap: 60px;
+  white-space: nowrap;
+}
+
+.navbar_menu a {
+  font-size: 14px;
+  color: #333333;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.navbar_menu a:hover {
+  opacity: 0.7;
+}
+
+.navbar_menu_burger {
+  display: none;
+  transition: all 0.2s ease-in;
+}
+
+.navbar_menu_burger button,
+.navbar_search button,
+.navbar_menu_burger_close button {
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.navbar_menu_burger_close button {
+  padding: 10px;
+}
+
+.navbar_menu_burger:hover {
+  opacity: 0.7;
+}
+
+.navbar_container_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidenav_menu {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 2;
+  gap: 20px;
+  top: 0;
+  right: 0;
+  background-color: #094f7c;
+  transition: 0.5s ease;
+  overflow-x: hidden;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav_menu a {
+  transition: all 0.2s ease-in;
+}
+
+.sidenav_menu a:hover {
+  opacity: 0.7;
+}
+
+.sidenav_menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar_menu_burger_close {
+  align-self: flex-start;
+  transition: all 0.2s ease-in;
+}
+
+.navbar_menu_burger_close:hover {
+  opacity: 0.7;
+}
+
+.navbar_search {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar_search button {
+  transition: all 0.2s ease-in;
+  transform: scaleX(-1);
+}
+
+.navbar_search button:hover {
+  opacity: 0.7;
+}
+
+.navbar_search button:hover + input,
+.navbar_search input:hover {
+  width: 100px;
+  padding: 0 10px;
+}
+
+.navbar_search input {
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  background: #f5f5f5f5;
+  padding: 0px;
+  font-size: 16px;
+  width: 0px;
+  transition: all 0.2s ease-in;
+}
+
+@media (max-width: 960px) {
+  .navbar_container_left,
+  .navbar_menu {
+    gap: 30px;
+    transition: all 0.2s ease-in;
+  }
+}
+
+@media (max-width: 820px) {
+  .navbar_container_left,
+  .navbar_menu {
+    gap: 15px;
+    transition: all 0.2s ease-in;
+  }
+  .navbar_menu a {
+    font-size: 12px;
+    transition: all 0.2s ease-in;
+  }
+}
+
+@media (max-width: 680px) {
+  .navbar_menu {
+    display: none;
+  }
+  .navbar_menu_burger,
+  .sidenav_menu {
+    display: flex;
+  }
+}

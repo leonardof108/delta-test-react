@@ -1,0 +1,21 @@
+.container {
+  padding: 56px 5%;
+}
+.card_container {
+  gap: 55px;
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1050px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .card_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
