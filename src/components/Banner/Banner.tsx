@@ -26,19 +26,21 @@ export default function Banner() {
         className={`mySwiper ${style.swiper}`}
       >
         <SwiperSlide className={style.swiper_slide_1}>
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "423px",
-            }}
-          >
-            <Image
-              src="/assets/slider1.png"
-              alt="Card image"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div className={style.swiper_brightness}>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "423px",
+              }}
+            >
+              <Image
+                src="/assets/slider1.png"
+                alt="Card image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -61,20 +63,22 @@ export default function Banner() {
           </div>
         </SwiperSlide>
         <SwiperSlide className={style.swiper_slide_2}>
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "423px",
-            }}
-          >
-            {" "}
-            <Image
-              src="/assets/slider2.png"
-              alt="Card image"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div className={style.swiper_brightness}>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "423px",
+              }}
+            >
+              {" "}
+              <Image
+                src="/assets/slider2.png"
+                alt="Card image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>{" "}
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -84,19 +88,21 @@ export default function Banner() {
           </div>
         </SwiperSlide>
         <SwiperSlide className={style.swiper_slide_3}>
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "423px",
-            }}
-          >
-            <Image
-              src="/assets/slider3.png"
-              alt="Card image"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div className={style.swiper_brightness}>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "423px",
+              }}
+            >
+              <Image
+                src="/assets/slider3.png"
+                alt="Card image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
           <div className={style.swiper_slide_text}>
             <p>

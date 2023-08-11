@@ -27,12 +27,16 @@
   transition: all 0.2s ease-in-out;
 }
 
+.swiper_brightness {
+  filter: brightness(50%);
+}
+
 .swiper_slide_1 {
   background-color: #094f7c;
 }
 
 .swiper_slide_2 {
-  background-color: #edefbec2;
+  background-color: #f1f82fc2;
 }
 
 .swiper_slide_3 {
@@ -42,7 +46,7 @@
 .swiper_slide_1 img,
 .swiper_slide_2 img,
 .swiper_slide_3 img {
-  opacity: 0.4;
+  opacity: 0.6;
   object-fit: cover;
   width: 100%;
   height: 100%;
