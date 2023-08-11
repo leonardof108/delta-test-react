@@ -15,6 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+        <title>Delta Global Teste</title>
       </Head>
       <body>
         <Main />
