@@ -115,6 +115,16 @@
   justify-content: space-between;
 }
 
+.swiper_slide_text p,
+.swiper_slide_text span,
+.swiper_slide_alt_text,
+.swiper_slide_alt_text_qual,
+.swiper_slide_alt_text_teste,
+.swiper_slide_alt_text_voce,
+.swiper_slide_alt_text_hoje {
+  transition: all 0.2s ease-in;
+}
+
 @media (max-width: 750px) {
   .swiper_slide_text {
     top: 33%;

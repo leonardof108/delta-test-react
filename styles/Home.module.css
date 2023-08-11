@@ -19,5 +19,6 @@
 @media (max-width: 680px) {
   .card_container {
     grid-template-columns: repeat(1, 1fr);
+    transition: all ease-in-out 0.25s;
   }
 }
