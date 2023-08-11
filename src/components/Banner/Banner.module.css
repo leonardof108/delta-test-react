@@ -16,6 +16,15 @@
 .swiper_slide_3 {
   border-radius: 10px;
   height: auto;
+  filter: brightness(100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper_slide_1:hover,
+.swiper_slide_2:hover,
+.swiper_slide_3:hover {
+  filter: brightness(90%);
+  transition: all 0.2s ease-in-out;
 }
 
 .swiper_slide_1 {

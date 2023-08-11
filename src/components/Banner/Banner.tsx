@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
 import style from "./Banner.module.css";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -13,7 +14,7 @@ export default function Banner() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -30,12 +31,14 @@ export default function Banner() {
               height: "423px",
             }}
           >
-            <Image
-              src="/assets/slider1.png"
-              alt="Card image"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Link href="#">
+              <Image
+                src="/assets/slider1.png"
+                alt="Card image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </Link>
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -65,12 +68,15 @@ export default function Banner() {
               height: "423px",
             }}
           >
-            <Image
-              src="/assets/slider2.png"
-              alt="Card image"
-              layout="fill"
-              objectFit="cover"
-            />
+            {" "}
+            <Link href="#">
+              <Image
+                src="/assets/slider2.png"
+                alt="Card image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </Link>
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -87,12 +93,14 @@ export default function Banner() {
               height: "423px",
             }}
           >
-            <Image
-              src="/assets/slider3.png"
-              alt="Card image"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Link href="#">
+              <Image
+                src="/assets/slider3.png"
+                alt="Card image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </Link>
           </div>
           <div className={style.swiper_slide_text}>
             <p>
