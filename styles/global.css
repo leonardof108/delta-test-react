@@ -14,6 +14,10 @@ body {
 button {
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #ffb300 !important;
   filter: brightness(100%);
