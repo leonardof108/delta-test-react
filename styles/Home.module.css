@@ -6,11 +6,13 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  transition: all ease-in-out 0.25s;
 }
 
 @media (max-width: 1050px) {
   .card_container {
     grid-template-columns: repeat(2, 1fr);
+    transition: all ease-in-out 0.25s;
   }
 }
 

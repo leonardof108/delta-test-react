@@ -6,24 +6,25 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [openToggle, setOpenToggle] = useState(false);
-  // const [size, setSize] = useState({
-  //   width: window.innerWidth,
-  // });
 
-  // const updateScreenSize = () => {
-  //   setSize({ width: window.innerWidth });
-  // };
+  const [size, setSize] = useState({
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+  });
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", updateScreenSize);
-  //   return () => {
-  //     window.removeEventListener("resize", updateScreenSize);
-  //   };
-  // }, []);
+  const updateScreenSize = () => {
+    setSize({ width: window.innerWidth });
+  };
 
-  // useEffect(() => {
-  //   setOpenToggle(false);
-  // }, [size]);
+  useEffect(() => {
+    window.addEventListener("resize", updateScreenSize);
+    return () => {
+      window.removeEventListener("resize", updateScreenSize);
+    };
+  }, []);
+
+  useEffect(() => {
+    setOpenToggle(false);
+  }, [size]);
 
   return (
     <nav className={style.navbar_container}>

@@ -35,6 +35,8 @@
 
 .card_title:hover {
   opacity: 0.7;
+  scale: 1.01;
+  backface-visibility: hidden;
 }
 
 .card_main {
@@ -75,6 +77,8 @@
 
 .card_name:hover {
   opacity: 0.7;
+  scale: 1.01;
+  backface-visibility: hidden;
 }
 
 .card_date {
@@ -87,4 +91,6 @@
 
 .card_date:hover {
   opacity: 0.7;
+  scale: 1.01;
+  backface-visibility: hidden;
 }

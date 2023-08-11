@@ -9,18 +9,20 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <>
+      {/* <Link href="#"> */}
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        centeredSlides={true}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
+        grabCursor={true}
         className={`mySwiper ${style.swiper}`}
       >
         <SwiperSlide className={style.swiper_slide_1}>
@@ -31,14 +33,12 @@ export default function Banner() {
               height: "423px",
             }}
           >
-            <Link href="#">
-              <Image
-                src="/assets/slider1.png"
-                alt="Card image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </Link>
+            <Image
+              src="/assets/slider1.png"
+              alt="Card image"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -69,14 +69,12 @@ export default function Banner() {
             }}
           >
             {" "}
-            <Link href="#">
-              <Image
-                src="/assets/slider2.png"
-                alt="Card image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </Link>
+            <Image
+              src="/assets/slider2.png"
+              alt="Card image"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -93,14 +91,12 @@ export default function Banner() {
               height: "423px",
             }}
           >
-            <Link href="#">
-              <Image
-                src="/assets/slider3.png"
-                alt="Card image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </Link>
+            <Image
+              src="/assets/slider3.png"
+              alt="Card image"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
           <div className={style.swiper_slide_text}>
             <p>
@@ -111,6 +107,7 @@ export default function Banner() {
         </SwiperSlide>
         <div className="swiper-pagination"></div>
       </Swiper>
+      {/* </Link> */}
     </>
   );
 }
