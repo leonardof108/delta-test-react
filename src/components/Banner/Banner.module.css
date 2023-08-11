@@ -65,7 +65,7 @@
   margin-bottom: -30px;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 300;
+  font-weight: 100;
   color: #ffffff9a;
 }
 
@@ -188,6 +188,10 @@
 @media (max-width: 520px) {
   .swiper_slide_text {
     left: 3%;
+    transition: all 0.2s ease-in;
+  }
+  .swiper_slide_2 .swiper_slide_text {
+    left: 10%;
     transition: all 0.2s ease-in;
   }
   .swiper_slide_alt_text {
