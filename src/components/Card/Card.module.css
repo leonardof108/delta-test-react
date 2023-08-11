@@ -31,6 +31,11 @@
   line-height: 26px;
   margin-bottom: 20px;
   text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.card_title:hover {
+  opacity: 0.7;
 }
 
 .card_main {
@@ -67,6 +72,11 @@
   color: #6d6d6d;
   font-weight: 500;
   text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.card_name:hover {
+  opacity: 0.7;
 }
 
 .card_date {

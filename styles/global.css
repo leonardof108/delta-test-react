@@ -16,12 +16,13 @@ button {
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #ffb300 !important;
-  opacity: 1 !important;
+  filter: brightness(100%);
 }
 
 .swiper-pagination-bullet {
   background: #dedede !important;
   opacity: 1 !important;
+  filter: brightness(95%);
   margin: 6px !important;
   width: 10px !important;
   height: 10px !important;

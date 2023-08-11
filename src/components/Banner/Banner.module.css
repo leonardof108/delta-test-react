@@ -17,7 +17,7 @@
   border-radius: 10px;
   height: auto;
   filter: brightness(100%);
-  transition: all 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 
 .swiper_slide_1:hover,
