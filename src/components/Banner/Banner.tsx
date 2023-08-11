@@ -22,7 +22,6 @@ export default function Banner() {
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
-        grabCursor={true}
         className={`mySwiper ${style.swiper}`}
       >
         <SwiperSlide className={style.swiper_slide_1}>
